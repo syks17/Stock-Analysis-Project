@@ -18,7 +18,7 @@ st.markdown("""
 st.subheader("Libraries used:")
 st.markdown("""
 - streamlit - `App creation`
-- matplotlib - `Vizualization
+- matplotlib - `Vizualization`
 - pandas - `Data handling`
 - seaborn - `Visualization`
 - datetime - `Formating of date`
