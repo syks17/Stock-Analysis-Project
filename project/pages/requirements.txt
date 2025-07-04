@@ -1,0 +1,9 @@
+streamlit
+matplotlib
+pandas
+seaborn
+datetime
+numpy
+yahooquery
+pandas-datareader
+yfinance
