@@ -4,7 +4,7 @@ st.subheader('Project Overview')
 st.markdown("This is an educational project built using Python and Streamlit. This interactive tool "
     "is designed to help users explore financial data, understand risk-return trade-offs, "
     "and forecast stock prices through a user-friendly interface. It serves as a learning platform "
-    "for those interested in quantitative finance, data science, and web application development.")
+    "for quantitative finance, data analysis, and web application development.")
 st.markdown("""
 
 - This project is for education purposes only.
