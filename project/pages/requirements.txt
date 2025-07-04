@@ -7,3 +7,4 @@ numpy
 yahooquery
 pandas-datareader
 yfinance
+prophet
