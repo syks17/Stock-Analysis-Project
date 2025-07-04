@@ -26,4 +26,5 @@ st.session_state.user_input_mkt = st.text_input('Enter Market Ticker', "^GSPC", 
 st.write("*Current Index Ticker* : ",st.session_state.user_input_mkt)
 
 st.write("")
-st.metric("Price", current_price)
+st.write("")
+st.metric("Price", current_price.round(2)
