@@ -8,4 +8,4 @@ yahooquery
 pandas-datareader
 yfinance
 prophet
-sklearn
+scikit-learn
