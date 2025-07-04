@@ -17,15 +17,16 @@ st.markdown("""
 
 st.subheader("Libraries used:")
 st.markdown("""
-- streamlit
-- matplotlib
-- pandas
-- seaborn
-- datetime
-- numpy
-- yahooquery
-- pandas-datareader
-- prophet
+- streamlit - `App creation`
+- matplotlib - `Vizualization
+- pandas - `Data handling`
+- seaborn - `Visualization`
+- datetime - `Formating of date`
+- numpy - `Data handling`
+- yahooquery - `Stock data download`
+- pandas-datareader - `Formating`
+- prophet - `For Prediction`
+- scikit-learn - `Regression and Beta`
 ---
 """)
 
