@@ -28,9 +28,6 @@ df_mkt = pd.DataFrame(mkt_data)
 risk_free_rate = st.number_input("Enter Risk-Free Rate (percentage)", 0)/100
 st.write(risk_free_rate)
 
-#expected_market_return = st.number_input("Enter expected Market Return(percentage)" , 0)/100
-#st.write(expected_market_return)
-
 closing_price_stock = df['close']
 closing_price_market = df_mkt['close']
 
