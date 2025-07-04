@@ -9,11 +9,10 @@ from yahooquery import Ticker
 st.subheader("Stock Ticker")
 if 'user_input_stock' not in st.session_state:
     st.session_state.user_input_stock = ''
-today = datetime.today().strftime('%Y-%m-%d')
 st.session_state.user_input_stock = st.text_input('Enter Stock Ticker',"GOOG", key="key").upper()
 st.write("*Current Ticker* :",st.session_state.user_input_stock)
 ticker = Ticker(st.session_state.get('user_input_stock'))
-st_data = ticker.history(period=period_days, interval="1d")
+st_data = ticker.history(period="1y", interval="1d")
 df = pd.DataFrame(st_data)
 current_price = df['close'].iloc[-1]
 
