@@ -7,6 +7,7 @@ import numpy as np
 from yahooquery import Ticker
 import pandas_datareader as web
 import datetime
+from prophet import Prophet
 
 
 ticker = Ticker(st.session_state.get('user_input_stock'))
@@ -17,9 +18,6 @@ st.write(st_data.tail(10))
 
 df = st_data[['date','close']]
 df.columns = ['ds','y']
-
-
-
 def clean_datetime(val):
     try:
         if isinstance(val, datetime.datetime):
@@ -30,14 +28,10 @@ def clean_datetime(val):
         return val
     except Exception:
         return val
-
+        
 df['ds'] = df['ds'].apply(clean_datetime)
 df['ds'] = pd.to_datetime(df['ds'], errors='coerce')
 
-
-
-
-from prophet import Prophet
 prophet1 = Prophet(daily_seasonality=True)
 prophet1.fit(df)
 years = st.slider("Select forecast period (years)", 1, 5, 1)  # min=1, max=5, default=2
@@ -61,9 +55,11 @@ ax.set_ylabel('Price')
 ax.grid(True, linestyle='--', alpha=0.6)
 st.pyplot(fig)
 
-st.subheader("Forecasted Data [Last 10 Days]")
-st.dataframe(predictions[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail(10))
-
+st.write("")
 returns = df['y'].pct_change().dropna()
 volatility = returns.std() * (252**0.5)
 st.metric("Volatility", f"{volatility*100:.2f}%")
+st.write("")
+
+st.subheader("Forecasted Data [Last 10 Days]")
+st.dataframe(predictions[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail(10))
