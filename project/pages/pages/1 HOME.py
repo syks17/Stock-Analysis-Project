@@ -27,4 +27,4 @@ st.write("*Current Index Ticker* : ",st.session_state.user_input_mkt)
 
 st.write("")
 st.write("")
-st.metric("Price", current_price.round(2)
+st.metric("Price", current_price.round(2))
