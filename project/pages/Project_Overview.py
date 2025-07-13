@@ -21,10 +21,10 @@ st.markdown("""
 - matplotlib - `Vizualization`
 - pandas - `Data handling`
 - seaborn - `Visualization`
-- datetime - `Formating of date`
+- datetime - `Formatting of date`
 - numpy - `Data handling`
 - yahooquery - `Stock data download`
-- pandas-datareader - `Formating`
+- pandas-datareader - `Formatting`
 - prophet - `For Prediction`
 - scikit-learn - `Regression and Beta`
 ---
