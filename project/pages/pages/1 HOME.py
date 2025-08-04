@@ -24,3 +24,5 @@ if 'user_input_mkt' not in st.session_state:
 today = datetime.today().strftime('%Y-%m-%d')
 st.session_state.user_input_mkt = st.text_input('Enter Market Ticker', "^GSPC", key="key_mkt").upper()
 st.write("*Current Index Ticker* : ",st.session_state.user_input_mkt)
+st.warning("Please make sure to add `^` before the index ticker")
+
