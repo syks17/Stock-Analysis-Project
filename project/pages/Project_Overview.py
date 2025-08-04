@@ -21,10 +21,8 @@ st.markdown("""
 - matplotlib - `Vizualization`
 - pandas - `Data handling`
 - seaborn - `Visualization`
-- datetime - `Formatting of date`
 - numpy - `Data handling`
 - yahooquery - `Stock data download`
-- pandas-datareader - `Formatting`
 - prophet - `For Prediction`
 - scikit-learn - `Regression and Beta`
 ---
@@ -73,3 +71,4 @@ The application is divided into the following pages:
     -the forecast with upper and lower confidence intervals. 
     -Actual and Forecasted Line
 """)
+
