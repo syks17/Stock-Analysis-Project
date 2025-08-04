@@ -6,7 +6,7 @@ import numpy as np
 from yahooquery import Ticker
 
 #STOCK
-st.warning("If Network/SSL error occurs Please refresh the page")
+st.warning("If SSL error occurs Please refresh the page")
 st.write("")
 st.subheader("Stock Ticker")
 if 'user_input_stock' not in st.session_state:
@@ -44,5 +44,6 @@ if ticker_mkt:
         st.error("No data found for the index ticker. Please check the ticker symbol. Make sure to add `^` before the index ticker")
 
 st.write("")
+
 
 
