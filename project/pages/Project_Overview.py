@@ -9,7 +9,7 @@ st.markdown("""
 
 - This project is for education purposes only.
 - The project uses Prophet for Price prediction.
-- Going back to the `HOME` page will reset the entered tickers to dafault because of the streamlit refresh feature.
+- Going back to the `HOME` page will reset the entered tickers to default because of the streamlit refresh feature.
         
 
 
@@ -71,4 +71,5 @@ The application is divided into the following pages:
     -the forecast with upper and lower confidence intervals. 
     -Actual and Forecasted Line
 """)
+
 
