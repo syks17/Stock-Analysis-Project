@@ -5,7 +5,6 @@ import seaborn as sns
 from datetime import datetime
 import numpy as np
 from yahooquery import Ticker
-import pandas_datareader as web
 import datetime
 from prophet import Prophet
 
@@ -63,3 +62,4 @@ st.write("")
 
 st.subheader("Forecasted Data [Last 10 Days]")
 st.dataframe(predictions[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail(10))
+
